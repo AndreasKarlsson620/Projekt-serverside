@@ -1,0 +1,22 @@
+//Create boat document
+db.bdb.boats.insertOne( { name: "", year: , price: , sail: , motor: } )
+
+//Read all boat documents
+db.bdb.boats.find().pretty()
+
+//Update boat document
+
+//Delete boat document
+db.bdb.boats.deleteOne( { _id: ObjectId("") } )
+
+//Count documents
+db.bdb.boats.count({})
+
+//Find documents with year lesser than 2003
+db.bdb.boats.find( { year: { $lt: 2003 } } )
+
+//Find documents with year greater than 2003
+db.bdb.boats.find( { year: { $gt: 2003 } } )
+
+//Find documents and sort by name in a
+db.dbd.boats.find( { name: 1 } )

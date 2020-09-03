@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+    <title>Projekt-serverside</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" charset="utf-8"></script>
+</head>
+<body>
+    <main>
+        <h1>
+			Projekt-serverside
+		</h1>
+		<section>
+			<div class="form-group">
+				What is your port?
+				<input type="text" id="inputPort" value="2468"/>
+			</div>
+			<div class="form-group">
+				<p>
+					What kind of request?
+				</p>
+				<label> <input type="radio" name="requestType" value="GET"/> GET </label>
+				<label> <input type="radio" name="requestType" value="POST"/> POST </label>
+				<label> <input type="radio" name="requestType" value="PUT"/> PUT </label>
+				<label> <input type="radio" name="requestType" value="DELETE"/> DELETE </label>
+			</div>
+			<div class="form-group">
+				<p>URL?
+                <input type="text" id="inputUrl" value="" />
+				</p>
+            </div>
+			<div class="form-group">
+				<p>Do you wish to have a querystring?</p>
+				?&nbsp;<input type="text" id="querystring" value="" />
+			</div>
+			<div class="form-group">
+				<p>Do you wish to send any data? (use JSON format)</p>
+				<textarea id="requestBody" rows="8" cols="80">
+					{
+						"name": "",
+						"year": ,
+						"price": ,
+						"sail": ,
+						"motor":
+					}
+				</textarea>
+            </div>
+			<p>
+                Will send request to this URL:
+                <strong><code id="destinationUrl"></code></strong>
+            </p>
+			<button id="buttonRequest">Make request</button>
+			<div class="form-group" id="resultDiv">
+                Result here
+            </div>
+        </section>
+    </main>
+</body>
+</html>
